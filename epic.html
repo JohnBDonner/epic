@@ -6,18 +6,28 @@
 	<link rel="stylesheet" type="text/css" href="weather-icons-master/css/weather-icons.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="epic.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="animate.css" media="all" />
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 	<div class="container-main">
 		<div class="animated fadeIn" id="bigbg"></div>
-		<div class="top">
+		<div id="pic-cover"></div>
+		<div class="topRight">
+			<div class="animated fadeInRight" id="temperature">
+				<a href="#" onclick="return false;"><p>36C</p></a>
+			</div>
 			<div class="animated rotateIn" id="icon">
 				<a href="#" onclick="return false;"><i class="wi wi-day-sunny"></i></a>
 			</div>
 		</div>
 		<div class="center">
 			<a href="#" onclick="return false;"><div class="animated fadeInUp" id="welcome">Hello</div></a>
+			<button class="nav-toggler toggle-push-bottom">Links</button>
 		</div>
+	</div>
+	<div class="container-bottom">
+		<div class="filler"></div>
 	</div>
 </body>
 </html>
