@@ -12,5 +12,13 @@
   "browser_action": {
     "default_popup": "epic.html"
   },
-  "permissions": []
+  "background": {
+    "scripts": ["js/vendor/angular.min.js"]
+  },
+  "permissions": [
+    "geolocation",
+    "storage",
+    "http://api.wunderground.com/api/",
+    "http://autocomplete.wunderground.com/api"
+  ]
 }

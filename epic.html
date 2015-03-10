@@ -2,12 +2,13 @@
 <html>
 <head>
 	<title>New Tab</title>
-	<link rel="stylesheet" type="text/css" href="normalize.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="weather-icons-master/css/weather-icons.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="epic.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="animate.css" media="all" />
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/epic.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/weather.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 	<div class="container-main">
@@ -15,19 +16,28 @@
 		<div id="pic-cover"></div>
 		<div class="topRight">
 			<div class="animated fadeInRight" id="temperature">
-				<a href="#" onclick="return false;"><p>36C</p></a>
+				<div class="hoverText"><p>36C</p></div>
 			</div>
 			<div class="animated rotateIn" id="icon">
-				<a href="#" onclick="return false;"><i class="wi wi-day-sunny"></i></a>
+				<div class="hoverText"><i class="wi wi-day-sunny"></i></div>
 			</div>
 		</div>
 		<div class="center">
-			<a href="#" onclick="return false;"><div class="animated fadeInUp" id="welcome">Hello</div></a>
-			<button class="nav-toggler toggle-push-bottom">Links</button>
+			<div class="hoverText animated fadeInUp" id="welcome">Hello</div>
+			<div class="wrapper"><div id="weather"></div></div>
+		</div>
+		<div class="topLeft">
+			<div class="hoverText animated fadeIn nav-toggler toggle-push-bottom">Links</div>
 		</div>
 	</div>
 	<div class="container-bottom">
-		<div class="filler"></div>
+		<ul>
+			<li><div class="website"></div></li>
+			<li><div class="website"></div></li>
+			<li><div class="website"></div></li>
+			<li><div class="website"></div></li>
+		</ul>
 	</div>
+	<div class="mask"></div>
 </body>
 </html>
