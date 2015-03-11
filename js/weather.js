@@ -534,15 +534,18 @@ function initHandlers() {
   });
 
   // TODO: remove the use of jQuery live()
+  /*
   $('#dots .dot').live('click', function() {
     var id = this.getAttribute('city');
     selectCity(cities.findById(id));
   });
 
+
   $('.delete').live('click', function() {
     var id = this.parentElement.getAttribute('city');
     deleteCity(cities.findById(id));
   });
+*/
 
   $('#new #add').click(function() {
     var searchterm = $('#searchterm').val();
@@ -573,7 +576,7 @@ function initHandlers() {
       showSettings();
   });
 
-
+/*
   $('#dots #next.shown').live('click', function() {
     adjustnext(num_dots_at_bottom);
   });
@@ -581,6 +584,7 @@ function initHandlers() {
   $('#dots #prev.shown').live('click', function() {
     adjustprev(num_dots_at_bottom);
   });
+*/
 
   $(document).keyup(function(event) {
     if (currentlyOnSettingsPage())
