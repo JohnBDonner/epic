@@ -638,8 +638,8 @@ function init() {
   setInterval(function() {
     updateAllWeatherData();
   }, 1000 * 60 * 5);
-
-  myScroll = new iScroll('wrapper', {
+/*
+  myScroll = new IScroll('wrapper', {
     snap: true,
     bounce: true,
     momentum: false,
@@ -655,7 +655,7 @@ function init() {
       var city = cities.ordered()[this.currPageX];
       selectCity(city);
     }
-  });
+  });*/
 }
 
 $(document).ready(function() {
